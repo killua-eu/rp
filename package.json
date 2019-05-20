@@ -1,0 +1,53 @@
+{
+  "name": "rp",
+  "version": "1.0.0",
+  "description": "RP: react playground",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/killua-eu/rp.git"
+  },
+  "author": "Killua-eu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/killua-eu/rp/issues"
+  },
+  "homepage": "https://github.com/killua-eu/rp",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.0.0",
+    "react-jsonschema-form": "^1.5.0",
+    "react-jsonschema-form-extras": "^0.9.40",
+    "popper.js": "^1.14.7",
+    "draft-js": "^0.10",
+    "immutable": "^3.8.2",
+    "react": "15.6.2",
+    "moment": "^2.20.0",
+    "react-bootstrap-table": "^4",
+    "react-bootstrap-typeahead": "^3.3.2",
+    "react-day-picker": "^7",
+    "react-rte": "^0.15.0",
+    "react-dom": "^15.6.2",
+    "create-react-class": "^15.6.3"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.3",
+    "dotenv": "^4.0.0",
+    "front-matter": "^2.0.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-flatten": "^0.4.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1"
+  },
+  "scripts": {
+    "start": "npm run gulp",
+    "build": "npm run gulp build",
+    "deploy": "cross-env BASE_URL=\"/rp/\" npm run build && gh-pages -d dist",
+    "gulp": "gulp --gulpfile build/gulpfile.js"
+  }
+}
